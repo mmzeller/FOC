@@ -9,17 +9,22 @@ This is the secure server-side component for the GitHub Pages FOC Heat app.
 - Enables web research through the configured OpenAI web-search tool.
 - Stores the latest report, up to 52 historical reports, and the watchlist in Cloudflare KV.
 - Sends prior reports and the prediction ledger to the research prompt so the model can learn from previous calls without rewriting history.
+- Protects all data/research endpoints with a personal application token.
 
 ## Deploy
 
 1. Install Cloudflare Wrangler.
 2. Copy `wrangler.toml.example` to `wrangler.toml`.
 3. Create a Cloudflare KV namespace and add its ID to `wrangler.toml` under the `FOC_DATA` binding.
-4. Set the OpenAI model as a Worker secret/variable. Do not commit an API key.
-5. Set `OPENAI_SEARCH_TOOL` to the web-search tool supported by the OpenAI API account. The example defaults to `web_search_preview`.
-6. Deploy the worker.
-7. Copy the Worker URL into a local `api-config.js` based on `api-config.js.example`.
-8. Add `api-config.js` to the Pages deployment, but never add an OpenAI API key to it.
+4. Create a strong random `APP_TOKEN`. Store it as a Worker secret/variable. This is the token the private browser app uses; it is not the OpenAI key.
+5. Store `OPENAI_API_KEY` as a Worker secret.
+6. Set `OPENAI_MODEL` to a model available to your OpenAI API account.
+7. Set `OPENAI_SEARCH_TOOL` to the web-search tool supported by the OpenAI API account. The example defaults to `web_search_preview`.
+8. Deploy the worker.
+9. Copy the Worker URL into `api-config.js` as `window.FOC_API_BASE`.
+10. Either put the same `APP_TOKEN` in `window.FOC_CLIENT_TOKEN` locally, or leave it blank and let the app prompt once and store it in that browser's local storage.
+
+Do not put `OPENAI_API_KEY` in `api-config.js`.
 
 ## Endpoints
 
@@ -29,6 +34,8 @@ This is the secure server-side component for the GitHub Pages FOC Heat app.
 - `GET /api/watchlist`
 - `POST /api/refresh`
 
-## Important
+All endpoints except health require `Authorization: Bearer <APP_TOKEN>`.
 
-The backend intentionally does not expose the OpenAI API key. GitHub Pages is a public client, so the key must remain in the Worker environment.
+## Important security note
+
+The GitHub Pages site is public. The browser token is an access credential, not a secret suitable for protecting a high-value public service. For a personal app it provides a basic gate; if the app is ever exposed beyond personal use, put Cloudflare Access or another real authentication layer in front of the Worker and add rate limiting.
