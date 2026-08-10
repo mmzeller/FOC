@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="FOC Heat — comic book investment research dashboard">
+  <title>FOC Heat</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><div class="eyebrow">COMIC INVESTMENT RESEARCH</div><h1>FOC Heat</h1></div>
+    <button id="refreshBtn" class="refresh" aria-label="Refresh report">↻ <span>Refresh</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div><span class="label">CURRENT REPORT</span><h2 id="reportTitle">FOC Heat Report</h2><p id="reportMeta">Loading…</p></div>
+      <div class="countdown"><span>NEXT CUTOFF</span><strong id="cutoff">—</strong></div>
+    </section>
+
+    <div id="status" class="status" hidden></div>
+    <section id="report" class="stack"></section>
+
+    <section class="section"><div class="section-head"><h2>Watchlist</h2><span id="watchCount">0</span></div><div id="watchlist" class="watchlist"></div></section>
+    <section class="section"><div class="section-head"><h2>Prediction Ledger</h2><span>Track the hits and misses</span></div><div id="ledger" class="ledger"></div></section>
+  </main>
+
+  <nav class="nav"><button class="active">Heat</button><button>Watch</button><button>History</button></nav>
+  <script src="app.js"></script>
+</body>
+</html>
