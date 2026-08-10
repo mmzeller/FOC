@@ -1,0 +1,66 @@
+{
+  "reportDate": "2026-08-10",
+  "cutoffLabel": "Monday, Aug 10",
+  "generatedAt": "2026-08-09T20:00:00-04:00",
+  "summary": "Baseline report. Live investment research is performed in ChatGPT so the app remains free.",
+  "books": [
+    {
+      "rank": 1,
+      "title": "CROWBOUND #1",
+      "publisher": "Image Comics",
+      "action": "BUY",
+      "investmentScore": 94,
+      "confidence": "High",
+      "risk": "Medium",
+      "qty": "3–5",
+      "foc": "2026-08-10",
+      "releaseDate": "2026-09-02",
+      "verifiedFacts": ["Creator-owned Image launch.", "FOC date was verified in the baseline research."],
+      "marketEvidence": ["Established creator audience; actual print run remains unknown."],
+      "thesis": "Creator-owned Lemire/Nguyen reunion with strong genre appeal and scarcity potential.",
+      "unknowns": ["Actual print run and retailer order totals are not public."],
+      "sources": []
+    },
+    {
+      "rank": 2,
+      "title": "TALES OF WONDER #1",
+      "publisher": "Image / Skybound",
+      "action": "BUY",
+      "investmentScore": 89,
+      "confidence": "Medium",
+      "risk": "Medium-High",
+      "qty": "2–3",
+      "foc": "2026-08-10",
+      "releaseDate": "2026-09-02",
+      "verifiedFacts": ["Creator-owned Steve Skroce launch."],
+      "marketEvidence": ["Strong incentive structure; demand evidence is weaker than Crowbound."],
+      "thesis": "Interesting upside from creator-owned superhero material and a collectible incentive structure.",
+      "unknowns": ["Actual print run and retailer order totals."],
+      "sources": []
+    },
+    {
+      "rank": 3,
+      "title": "TEEN TITANS #1",
+      "publisher": "DC",
+      "action": "BUY",
+      "investmentScore": 83,
+      "confidence": "Medium",
+      "risk": "Medium-High",
+      "qty": "1–2",
+      "foc": "2026-08-10",
+      "releaseDate": "2026-09-02",
+      "verifiedFacts": ["Major DC relaunch with new characters."],
+      "marketEvidence": ["Strong mainstream collector audience; supply could also be high."],
+      "thesis": "New-character potential and major creators make this worth a small position, but not a deep buy.",
+      "unknowns": ["Whether any new character becomes a durable key."],
+      "sources": []
+    }
+  ],
+  "ledgerNotes": [
+    "Minotaur #1 — LOSS / near-cover aftermarket after release.",
+    "Black Star #1 — LOSS / still near cover price.",
+    "Crowbound #1 — PENDING.",
+    "Tales of Wonder #1 — PENDING.",
+    "The Forever Home #1 — PENDING."
+  ]
+}
