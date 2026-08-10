@@ -1,0 +1,22 @@
+{
+  "predictions": [
+    {
+      "title": "Minotaur #1",
+      "status": "LOSS",
+      "original_recommendation": "BUY",
+      "note": "Creator strength and new IP were overweighted; demand/supply evidence was insufficient."
+    },
+    {
+      "title": "Black Star #1",
+      "status": "LOSS",
+      "original_recommendation": "BUY",
+      "note": "Initial conviction was reduced after additional investigation; aftermarket remained near cover."
+    },
+    {"title":"Crowbound #1","status":"PENDING"},
+    {"title":"Tales of Wonder #1","status":"PENDING"},
+    {"title":"Teen Titans #1","status":"PENDING"},
+    {"title":"Legion of Super-Heroes #1","status":"PENDING"},
+    {"title":"A Ghost Arm Made of Angry Ghosts #1","status":"PENDING"},
+    {"title":"Archie #1","status":"PENDING"}
+  ]
+}
