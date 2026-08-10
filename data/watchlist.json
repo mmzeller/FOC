@@ -1,6 +1,6 @@
 [
-  {"title":"The Forever Home #1","reason":"Post-FOC opportunity; monitor for cover-price copies and early demand."},
-  {"title":"Midnight X-Men #1","reason":"Upcoming Marvel Midnight launch; track FOC, variants, first appearances and retailer demand."},
-  {"title":"Midnight Spider-Man #1","reason":"Upcoming Midnight launch; huge audience but likely high supply."},
-  {"title":"Midnight Fantastic Four #1","reason":"Upcoming Midnight launch; monitor for a meaningful first-appearance catalyst."}
+  {"title":"The Forever Home #1","status":"POST-FOC","reason":"Strong creator-owned horror/sci-fi setup; missed FOC; monitor for cover-price copies and early market evidence."},
+  {"title":"Midnight X-Men #1","status":"WATCH","reason":"Major Marvel Midnight launch; monitor variants, demand, and first-appearance information before buying deep."},
+  {"title":"Midnight Spider-Man #1","status":"WATCH","reason":"Large collector base but likely high supply; watch demand versus print/ordering signals."},
+  {"title":"Midnight Fantastic Four #1","status":"WATCH","reason":"Potentially important Midnight launch, but investment case requires stronger scarcity/demand evidence."}
 ]
