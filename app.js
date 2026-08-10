@@ -13,7 +13,7 @@ const FALLBACK_REPORT = {
 };
 
 function esc(s){return String(s ?? "").replace(/[&<>\"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#039;'}[c]))}
-function showStatus(message,error=false){const s=document.querySelector('#status');s.hidden=false;s.className=`status ${error?'error':''}`;s.textContent=message;if(!error)setTimeout(()=>s.hidden=true,6000)}
+function showStatus(message,error=false){const s=document.querySelector('#status');s.hidden=false;s.className=`status ${error?'error':''}`;s.textContent=message;if(!error)setTimeout(()=>s.hidden=true,9000)}
 function renderBook(b){
   const sources=(b.sources||[]).filter(Boolean).map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">Source</a>`).join(" ");
   const facts=(b.verifiedFacts||[]).map(x=>`<li>${esc(x)}</li>`).join("");
@@ -41,14 +41,70 @@ async function loadData(){
     render(report,watch);
   }catch(e){render(FALLBACK_REPORT,[]);showStatus('Using the built-in baseline report.',true)}
 }
+
+function buildResearchPrompt(){
+  const today=new Date().toISOString().slice(0,10);
+  return `I am continuing my FOC Heat comic-book investment research project. The canonical repository is https://github.com/mmzeller/foc. Today is ${today}.
+
+BEFORE RESEARCHING: inspect the repository and read PROJECT_CONTEXT.md, data/predictions.json, data/watchlist.json, data/current.json, and research-prompt.md. Treat those files as the project's source of truth. If you cannot access GitHub, say so and tell me exactly which files I need to provide; do not guess at the project's history.
+
+RUN THIS WEEK'S FOC HEAT REPORT.
+
+NON-NEGOTIABLE RULES:
+1. Investment first. The goal is aftermarket profit and risk-adjusted return, not reading recommendations.
+2. Determine the next relevant FOC cutoff for the user's market before evaluating candidates.
+3. Verify the exact FOC cutoff with current, credible evidence. Cross-check publisher/distributor/retailer evidence when possible.
+4. Never recommend a book as a current FOC buy if its FOC has already passed. Put missed books in POST-FOC OPPORTUNITIES instead.
+5. Separate VERIFIED FACTS, MARKET EVIDENCE, INVESTMENT THESIS, and UNKNOWN/UNVERIFIED INFORMATION.
+6. Never fabricate print runs, retailer orders, pull-list counts, sales, completed-sale prices, scarcity, first appearances, or any other unknown fact.
+7. Distinguish asking prices from completed sales.
+8. A #1, famous character, famous creator, incentive ratio, or large number of variants does not automatically make a book a buy.
+9. Weight demand-versus-supply evidence more heavily than creator reputation alone.
+10. Treat acquisition price as part of the investment thesis.
+11. Use conservative conviction language rather than false numerical precision when evidence is incomplete.
+12. Compare new candidates against the historical prediction ledger and explain how prior wins/misses should affect the thesis.
+13. Be ruthless. If evidence is weak, say PASS or WATCH rather than forcing a BUY.
+
+OUTPUT:
+- Exact next FOC date and ordering window.
+- Strongest BUY candidates first.
+- WATCH candidates.
+- PASS candidates.
+- POST-FOC OPPORTUNITIES.
+- For every serious candidate: title, publisher, release date, exact FOC date, creators, verified facts, market evidence, investment thesis, unknowns, risk, confidence, suggested quantity, reasonable maximum acquisition price if supportable, and source links.
+- Explicitly flag evidence that is weak or unverified.
+- End with the actual shopping list for someone trying to maximize risk-adjusted profit.
+- Preserve historical predictions; do not rewrite history to make prior calls look better.
+
+IMPORTANT: Do not merely repeat the stored current report. Re-research the current FOC window from fresh sources. The stored report is historical context, not proof that its dates or recommendations remain current.`;
+}
+
 async function requestResearch(){
-  const prompt=`Run this week's FOC Heat Report for my FOC Heat investment project.\n\nIMPORTANT: investment first. Verify the actual upcoming FOC cutoff before recommending anything. Do not recommend books whose FOC has already passed. Cross-check FOC dates using current publisher/distributor/retailer evidence.\n\nFor every serious candidate, separate VERIFIED FACTS, MARKET EVIDENCE, INVESTMENT THESIS, and UNKNOWN/UNVERIFIED INFORMATION. Never invent print runs, retailer orders, pull-list counts, sales figures, or prices.\n\nUse our prediction history: Minotaur #1 = LOSS/near-cover aftermarket; Black Star #1 = LOSS/still near cover. Pending: Crowbound #1, Tales of Wonder #1, The Forever Home #1. Weight demand-versus-supply evidence more heavily than creator reputation, character fame, or variant ratios alone.\n\nReturn the strongest BUY candidates first, then WATCH, then PASS. Include exact FOC date, release date, suggested quantity, risk, confidence, and source links. Also identify any post-FOC opportunity worth watching. Be ruthless: if evidence is weak, say so.`;
+  const prompt=buildResearchPrompt();
+  let copied=false;
   try{
     await navigator.clipboard.writeText(prompt);
-    showStatus('Research prompt copied. Opening ChatGPT — run the report there, then update the app data with the resulting report.');
-  }catch(e){showStatus('Could not copy automatically. The research prompt is available in research-prompt.md in the repository.',true)}
-  window.open('https://chatgpt.com/','_blank','noopener');
+    copied=true;
+  }catch(e){
+    try{
+      const ta=document.createElement('textarea');
+      ta.value=prompt;ta.style.position='fixed';ta.style.opacity='0';
+      document.body.appendChild(ta);ta.focus();ta.select();copied=document.execCommand('copy');ta.remove();
+    }catch(_){copied=false}
+  }
+
+  // ChatGPT supports query-prefilled links in supported clients. The clipboard copy
+  // remains the fallback because very long URLs may be truncated by some browsers.
+  const chatUrl=`https://chatgpt.com/?q=${encodeURIComponent(prompt)}`;
+  try{window.open(chatUrl,'_blank','noopener');}catch(e){window.location.href=chatUrl;}
+
+  if(copied){
+    showStatus('The complete FOC research prompt was copied and ChatGPT was opened with the prompt prefilled when supported. If the message box is not prefilled, paste from your clipboard and press Send.');
+  }else{
+    showStatus('ChatGPT was opened. The prompt could not be copied automatically; use research-prompt.md or the README continuity prompt.',true);
+  }
 }
+
 document.querySelector('#refreshBtn').addEventListener('click',requestResearch);
 document.querySelectorAll('.nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');const id=btn.dataset.target;if(id==='top')window.scrollTo({top:0,behavior:'smooth'});else document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}));
 render(FALLBACK_REPORT,[]);
