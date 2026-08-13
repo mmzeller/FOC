@@ -5,6 +5,9 @@ const CORS_HEADERS = {
   "Content-Type": "application/json; charset=utf-8"
 };
 
+const DEFAULT_OPENAI_MODEL = "gpt-5";
+const DEFAULT_OPENAI_SEARCH_TOOL = "web_search";
+
 const SYSTEM_PROMPT = `You are the research engine for FOC Heat, a comic-book investment research application.
 
 Objective: maximize expected aftermarket return on comic-book purchases made at or before Final Order Cutoff (FOC). Investment first, not reading recommendations.
@@ -63,12 +66,12 @@ function authorized(request, env) {
 
 async function openaiResearch(env, prompt) {
   if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is not configured.");
-  if (!env.OPENAI_MODEL) throw new Error("OPENAI_MODEL is not configured.");
-  const toolType = env.OPENAI_SEARCH_TOOL || "web_search_preview";
+  const model = env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL;
+  const toolType = env.OPENAI_SEARCH_TOOL || DEFAULT_OPENAI_SEARCH_TOOL;
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: { "Authorization": `Bearer ${env.OPENAI_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ model: env.OPENAI_MODEL, tools: [{ type: toolType }], input: [
+    body: JSON.stringify({ model, tools: [{ type: toolType }], input: [
       { role: "system", content: SYSTEM_PROMPT },
       { role: "user", content: prompt }
     ] })
@@ -129,7 +132,7 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS_HEADERS });
     const url = new URL(request.url);
     try {
-      if (url.pathname === "/api/health") return json({ ok: true, configured: !!env.OPENAI_API_KEY && !!env.OPENAI_MODEL && !!env.APP_TOKEN });
+      if (url.pathname === "/api/health") return json({ ok: true, configured: !!env.OPENAI_API_KEY && !!env.APP_TOKEN, model: env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL, searchTool: env.OPENAI_SEARCH_TOOL || DEFAULT_OPENAI_SEARCH_TOOL });
       if (!authorized(request, env)) return json({ error: "Unauthorized" }, 401);
       if (url.pathname === "/api/report" && request.method === "GET") {
         const report = await getJson(env, "current", null);
