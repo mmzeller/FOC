@@ -17,10 +17,11 @@
     <section id="report" class="stack"></section>
     <section class="section"><div class="section-head"><h2>Post-FOC Opportunities</h2><span>Missed FOC / watch for value</span></div><div id="postFoc" class="watchlist"></div></section>
     <section class="section"><div class="section-head"><h2>Watchlist</h2><span id="watchCount">0</span></div><div id="watchlist" class="watchlist"></div></section>
+    <section class="section portfolio"><div class="section-head"><div><h2>My Purchases</h2><span>Independent of current recommendations</span></div></div><div class="track-form"><input id="trackTitle" type="text" placeholder="Comic title (e.g. Crowbound #1)"><button id="trackBtn" type="button">Track comic</button></div><div id="purchases" class="watchlist"></div></section>
     <section class="section"><div class="section-head"><h2>Prediction Ledger</h2><span>Track the hits and misses</span></div><div id="ledger" class="ledger"></div></section>
     <section class="section about"><div class="section-head"><h2>Research Integrity</h2></div><p>FOC dates are treated as a hard constraint. Verified facts, market evidence, and investment thesis are kept separate. Unknown print runs, retailer orders, pull counts, and prices are never fabricated.</p><p class="muted">The free workflow uses ChatGPT for live research. No OpenAI API key is stored in this public site.</p></section>
   </main>
-  <nav class="nav"><button class="active" data-target="top">Heat</button><button data-target="postFoc">Post-FOC</button><button data-target="watchlist">Watch</button><button data-target="ledger">History</button></nav>
+  <nav class="nav"><button class="active" data-target="top">Heat</button><button data-target="postFoc">Post-FOC</button><button data-target="watchlist">Watch</button><button data-target="purchases">Purchases</button><button data-target="ledger">History</button></nav>
   <script src="api-config.js" onerror="window.FOC_API_BASE=window.FOC_API_BASE||''"></script><script src="app.js"></script>
 </body>
 </html>
