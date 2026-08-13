@@ -21,6 +21,7 @@ Non-negotiable rules:
 9. Use completed-sale evidence when evaluating released books whenever available; asking prices are weaker evidence.
 10. Be conservative. It is better to return three strong candidates than ten weak ones.
 11. Current date is supplied by the application. Resolve relative dates from it.
+12. User purchase records are factual transaction data. Never change a prediction because the user purchased or skipped a book. Use purchase data only to evaluate realized outcomes and acquisition economics.
 
 Return strict JSON with this shape:
 {
@@ -37,8 +38,10 @@ Return strict JSON with this shape:
       "risk": "Low|Medium|High",
       "qty": "...",
       "investmentScore": 0,
+      "maximumAcquisitionPrice": 0,
       "foc": "YYYY-MM-DD",
       "releaseDate": "YYYY-MM-DD",
+      "creators": "...",
       "verifiedFacts": ["..."],
       "marketEvidence": ["..."],
       "thesis": "...",
@@ -89,6 +92,7 @@ async function refresh(env) {
   const previous = await getJson(env, "history", []);
   const ledger = await getJson(env, "ledger", []);
   const watchlist = await getJson(env, "watchlist", []);
+  const purchases = await getJson(env, "purchases", {});
   const prompt = `Run this week's FOC Heat Report. Today is ${current.slice(0, 10)}.
 
 You must research the next actual FOC cutoff, not assume that the current calendar week is correct. Search for the next active FOC window and verify dates before recommending anything.
@@ -98,6 +102,9 @@ ${JSON.stringify(ledger, null, 2)}
 
 Current watchlist:
 ${JSON.stringify(watchlist, null, 2)}
+
+User transaction data. This is factual user activity, not evidence for or against a book. Do not change historical predictions because of it:
+${JSON.stringify(purchases, null, 2)}
 
 Previous reports (use them for continuity and error analysis; do not alter them):
 ${JSON.stringify(previous.slice(-6), null, 2)}
@@ -130,6 +137,23 @@ export default {
       }
       if (url.pathname === "/api/history" && request.method === "GET") return json(await getJson(env, "history", []));
       if (url.pathname === "/api/watchlist" && request.method === "GET") return json(await getJson(env, "watchlist", []));
+      if (url.pathname === "/api/purchases" && request.method === "GET") return json(await getJson(env, "purchases", {}));
+      if (url.pathname === "/api/purchases" && request.method === "POST") {
+        const body = await request.json();
+        if (!body || !body.title || !body.position) return json({ error: "title and position are required" }, 400);
+        const purchases = await getJson(env, "purchases", {});
+        purchases[body.title] = { ...body.position, updatedAt: new Date().toISOString() };
+        await putJson(env, "purchases", purchases);
+        return json(purchases[body.title], 201);
+      }
+      if (url.pathname === "/api/purchases" && request.method === "DELETE") {
+        const title = url.searchParams.get("title");
+        if (!title) return json({ error: "title is required" }, 400);
+        const purchases = await getJson(env, "purchases", {});
+        delete purchases[title];
+        await putJson(env, "purchases", purchases);
+        return json({ ok: true });
+      }
       if (url.pathname === "/api/refresh" && request.method === "POST") return json(await refresh(env));
       return json({ error: "Not found" }, 404);
     } catch (error) { return json({ error: error.message || "Unknown server error" }, 500); }
