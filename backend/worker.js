@@ -127,6 +127,25 @@ Research current publisher solicitations, distributor/retailer FOC listings, rep
   return entry;
 }
 
+function normalizePurchase(body) {
+  const position = body.position || body;
+  return {
+    status: position.status || "Ordered",
+    quantity: Number(position.quantity || 0),
+    pricePerCopy: Number(position.pricePerCopy || 0),
+    priceBasis: position.priceBasis || "Unknown",
+    purchaseDate: position.purchaseDate || "",
+    retailer: position.retailer || "",
+    notes: position.notes || "",
+    foc: position.foc || "",
+    releaseDate: position.releaseDate || "",
+    publisher: position.publisher || "",
+    creators: position.creators || "",
+    variant: position.variant || "",
+    updatedAt: new Date().toISOString()
+  };
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS_HEADERS });
@@ -143,11 +162,12 @@ export default {
       if (url.pathname === "/api/purchases" && request.method === "GET") return json(await getJson(env, "purchases", {}));
       if (url.pathname === "/api/purchases" && request.method === "POST") {
         const body = await request.json();
-        if (!body || !body.title || !body.position) return json({ error: "title and position are required" }, 400);
+        if (!body || !body.title) return json({ error: "title is required" }, 400);
         const purchases = await getJson(env, "purchases", {});
-        purchases[body.title] = { ...body.position, updatedAt: new Date().toISOString() };
+        const title = String(body.title).trim();
+        purchases[title] = normalizePurchase(body);
         await putJson(env, "purchases", purchases);
-        return json(purchases[body.title], 201);
+        return json(purchases[title], 201);
       }
       if (url.pathname === "/api/purchases" && request.method === "DELETE") {
         const title = url.searchParams.get("title");
