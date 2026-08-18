@@ -2,5 +2,11 @@
   "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
   "name": "foc-heat-api",
   "main": "backend/worker.js",
-  "compatibility_date": "2026-08-17"
+  "compatibility_date": "2026-08-17",
+  "kv_namespaces": [
+    {
+      "binding": "FOC_DATA",
+      "id": "3204aadad7c9419dba6aeb1cbeaeb940"
+    }
+  ]
 }
