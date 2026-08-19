@@ -1,22 +1,15 @@
 {
   "predictions": [
-    {
-      "title": "Minotaur #1",
-      "status": "LOSS",
-      "original_recommendation": "BUY",
-      "note": "Creator strength and new IP were overweighted; demand/supply evidence was insufficient."
-    },
-    {
-      "title": "Black Star #1",
-      "status": "LOSS",
-      "original_recommendation": "BUY",
-      "note": "Initial conviction was reduced after additional investigation; aftermarket remained near cover."
-    },
+    {"title":"Minotaur #1","status":"LOSS","original_recommendation":"BUY","note":"Creator strength and new IP were overweighted; demand/supply evidence was insufficient."},
+    {"title":"Black Star #1","status":"LOSS","original_recommendation":"BUY","note":"Initial conviction was reduced after additional investigation; aftermarket remained near cover."},
     {"title":"Crowbound #1","status":"PENDING"},
     {"title":"Tales of Wonder #1","status":"PENDING"},
     {"title":"Teen Titans #1","status":"PENDING"},
     {"title":"Legion of Super-Heroes #1","status":"PENDING"},
     {"title":"A Ghost Arm Made of Angry Ghosts #1","status":"PENDING"},
-    {"title":"Archie #1","status":"PENDING"}
+    {"title":"Archie #1","status":"PENDING"},
+    {"title":"Exquisite Corpses: Fox Mask Killer #1","status":"PENDING","predictionDate":"2026-08-19","original_recommendation":"BUY","foc":"2026-08-24","maximumAcquisitionPrice":4.99,"suggestedQuantity":"1","note":"Fresh BUY based on completed-sale evidence for parent Exquisite Corpses #1; supply and spin-off demand remain unknown."},
+    {"title":"Avengers #1","status":"PENDING","predictionDate":"2026-08-19","original_recommendation":"WATCH","foc":"2026-08-24","maximumAcquisitionPrice":5.99,"suggestedQuantity":"0","note":"Strong creative/flagship thesis but aggressive supply and no completed sales for the unreleased issue."},
+    {"title":"It Demands Sacrifice #1","status":"PENDING","predictionDate":"2026-08-19","original_recommendation":"WATCH","foc":"2026-08-24","maximumAcquisitionPrice":5.99,"suggestedQuantity":"0","note":"Interesting horror concept and incentive structure, but comic-specific aftermarket demand is unverified."}
   ]
 }
