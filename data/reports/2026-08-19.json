@@ -1,0 +1,10 @@
+{
+  "reportDate":"2026-08-19",
+  "cutoff":"2026-08-24",
+  "orderingWindow":"Now through Monday, Aug. 24, 2026; no universal clock-time cutoff verified.",
+  "shoppingList":[{"rank":1,"title":"Exquisite Corpses: Fox Mask Killer #1","action":"BUY","qty":"1","maxPrice":4.99,"evidenceGrade":"B","confidence":"Moderate"},{"rank":2,"title":"Avengers #1","action":"WATCH","qty":"0","maxPrice":5.99,"evidenceGrade":"B-","confidence":"Moderate-Low"},{"rank":3,"title":"It Demands Sacrifice #1","action":"WATCH","qty":"0","maxPrice":5.99,"evidenceGrade":"C+","confidence":"Low-Moderate"},{"rank":4,"title":"Marvel Mangaverse: Ghostlocke #1","action":"PASS","qty":"0","evidenceGrade":"C","confidence":"Low"},{"rank":5,"title":"Fantastic Four: First Foes — Dragon Man #1","action":"PASS","qty":"0","evidenceGrade":"C","confidence":"Low"}],
+  "postFoc":["Crowbound #1","Tales of Wonder #1","The Forever Home #1"],
+  "upcomingNextWeek":["Doom All-On-One #1","Midnight X-Men #1","Midnight Spider-Man #1","Midnight Fantastic Four #1"],
+  "keyConclusion":"Only one current-window book earned a speculative BUY. Exquisite Corpses: Fox Mask Killer #1 is supported by real completed-sale evidence for its parent series and a low $4.99 entry, but supply and spin-off demand remain unknown. Avengers #1 has the strongest Marvel profile but too much visible supply uncertainty for a current BUY. It Demands Sacrifice #1 is promising but lacks completed-sale evidence. Ghostlocke and Dragon Man are PASSes because IP/creator interest does not establish demand exceeding supply.",
+  "historicalPreservation":"All prior prediction records remain unchanged. User purchase/position data was not used to alter any prediction."
+}
