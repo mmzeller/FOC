@@ -131,22 +131,27 @@
   },
   {
     "title": "Hammer Head #1",
-    "status": "WATCH",
-    "reason": "2026-09-19 WATCH. FOC Sep. 21. Strong Ed Brisson/Damian Couceiro horror package, but no issue-specific completed-sale evidence. Maximum $3.99; standard copy only."
+    "status": "POST-FOC",
+    "reason": "2026-09-19 WATCH. FOC passed Sep. 21; Strong Ed Brisson/Damian Couceiro horror package, but no issue-specific completed-sale evidence. Maximum $3.99; standard copy only."
   },
   {
     "title": "Dungeons & Dragons #1",
-    "status": "WATCH",
-    "reason": "2026-09-19 WATCH. FOC Sep. 21. Strong licensed IP and creators, but standard-copy D&D precedents do not establish a premium. Maximum $3.99; no scarcity-driven variant speculation."
+    "status": "POST-FOC",
+    "reason": "2026-09-19 WATCH. FOC passed Sep. 21; Strong licensed IP and creators, but standard-copy D&D precedents do not establish a premium. Maximum $3.99; no scarcity-driven variant speculation."
   },
   {
     "title": "Iron Man: Racing Towards Doom #1",
-    "status": "WATCH",
-    "reason": "2026-09-19 WATCH. FOC Sep. 21. Earlier promotional F1 editions sold strongly, but those are not the new mass-market standard copy. Maximum $3.99; standard copy only."
+    "status": "POST-FOC",
+    "reason": "2026-09-19 WATCH. FOC passed Sep. 21; Earlier promotional F1 editions sold strongly, but those are not the new mass-market standard copy. Maximum $3.99; standard copy only."
   },
   {
     "title": "Predator vs. Punisher #1",
-    "status": "WATCH",
-    "reason": "2026-09-19 WATCH. FOC Sep. 21. Strong crossover premise but high variant/incentive supply and only preorder transaction evidence. Maximum $4.99; standard copy only."
+    "status": "POST-FOC",
+    "reason": "2026-09-19 WATCH. FOC passed Sep. 21; Strong crossover premise but high variant/incentive supply and only preorder transaction evidence. Maximum $4.99; standard copy only."
+  },
+  {
+    "title": "Archie in Hell #1",
+    "status": "POST-FOC",
+    "reason": "Sep. 28, 2026 FOC was missed. Oni Press horror Archie launch with Patrick Horvath and Tyler Crook; monitor standard copies near cover only. Variant incentives and creator interest do not establish a demand/supply edge; no BUY prediction was issued."
   }
 ]
