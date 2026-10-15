@@ -1,0 +1,151 @@
+{
+  "reportDate": "2026-10-15",
+  "cutoffLabel": "Monday, October 19, 2026",
+  "generatedAt": "2026-10-15",
+  "summary": "FOC Heat research for the October 19, 2026 FOC window. No current BUY is justified. Chainkata #1 and Absolute Batman: Beyond Ark M #1 merit WATCH status, but the former relies mainly on creator-level precedent and the latter's earlier related issue sales do not prove this follow-up will appreciate. Preserve capital; do not chase variants.",
+  "orderingWindow": "Comic Previews' Last Call page and PRH's retailer catalog identify Monday, October 19, 2026 as the current FOC date. Comic Previews lists the following candidates with that FOC and release dates. Exact ordering time depends on retailer; confirm the chosen shop's deadline before submitting. Do not assume a universal cutoff hour.",
+  "books": [
+    {
+      "rank": 1,
+      "title": "CHAINKATA #1",
+      "publisher": "Image Comics",
+      "action": "WATCH",
+      "evidenceGrade": "C+",
+      "confidence": "Low",
+      "risk": "High",
+      "qty": "0",
+      "maximumAcquisitionPrice": 3.99,
+      "foc": "2026-10-19",
+      "releaseDate": "2026-11-18",
+      "creators": "Daniel Warren Johnson (cover artist; verify full story credits from final solicitation before ordering)",
+      "verifiedFacts": [
+        "Comic Previews lists standard Cover A at $3.99, release November 18, 2026, FOC October 19, 2026.",
+        "The listing identifies Image Comics and Daniel Warren Johnson on Cover A.",
+        "Current public listing does not establish print run, retailer orders, or a key first appearance."
+      ],
+      "marketEvidence": [
+        "PriceCharting shows completed sales for Daniel Warren Johnson's Transformers #1 Cover A first print frequently around $30-$50 in July-August 2026, with other cover editions much lower. These are creator/series-specific historical results, not evidence for Chainkata demand.",
+        "No issue-specific completed sales are possible before release; no credible order or print-run figure verified."
+      ],
+      "thesis": "Creator-level market history is unusually strong, but that is not enough to justify a FOC BUY. A $3.99 standard copy limits nominal exposure; however, no verified issue-specific demand signal exists. WATCH only; revisit after release and look for completed sales net of fees/shipping.",
+      "unknowns": [
+        "Full verified story creative team and premise from a primary solicitation",
+        "Print run and retailer orders",
+        "Whether Chainkata develops a durable key or collector catalyst",
+        "Post-release demand and completed-sale prices"
+      ],
+      "sources": [
+        "https://comicpreviews.com/featured",
+        "https://comicpreviews.com/last_call",
+        "https://www.pricecharting.com/game/comic-books-transformers/transformers-johnson-1-2023"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "ABSOLUTE BATMAN: BEYOND ARK M #1",
+      "publisher": "DC Comics",
+      "action": "WATCH",
+      "evidenceGrade": "B-",
+      "confidence": "Low-Moderate",
+      "risk": "High",
+      "qty": "0",
+      "maximumAcquisitionPrice": 4.99,
+      "foc": "2026-10-19",
+      "releaseDate": "2026-11-11",
+      "creators": "Scott Snyder and Frank Tieri (writers); Francesco Francavilla (art and cover); Dustin Nguyen (variant cover)",
+      "verifiedFacts": [
+        "DC's November solicitation lists a 32-page one-shot at $4.99, on sale November 11, 2026; Comic Previews lists FOC October 19, 2026.",
+        "The solicitation describes it as a continuation of the Ark M storyline, with Joker surveying his empire of Arks.",
+        "A $6.99 card-stock variant is solicited; standard Cover A is the only edition considered here."
+      ],
+      "marketEvidence": [
+        "PriceCharting records completed sales for the preceding Absolute Batman: Ark M Special #1 standard first print, including roughly $8.50-$14.42 ungraded sales in late August and September 2026; some later printings sold near $5-$7.",
+        "Those sales are for the preceding special, not this new issue. They may reflect its specific story/key status and do not prove the sequel will command a premium."
+      ],
+      "thesis": "The strongest evidence among this week's candidates is the related issue's observed standard-copy demand, but extrapolation is risky: the prior issue may have had a distinct catalyst, and follow-up demand can decay quickly. WATCH, not BUY. Do not pay a premium or speculate on the variant.",
+      "unknowns": [
+        "Whether the new issue contains a key first appearance or other durable catalyst",
+        "Retailer order volume and print run",
+        "Whether the preceding issue's sales translate to this follow-up",
+        "Post-release completed sales and sustained demand"
+      ],
+      "sources": [
+        "https://aiptcomics.com/2026/08/21/full-november-2026-dc-comics-solicitations/",
+        "https://comicpreviews.com/last_call",
+        "https://www.pricecharting.com/game/comic-books-absolute-batman-ark-m-special/absolute-batman-ark-m-special-1-2026"
+      ]
+    }
+  ],
+  "passCandidates": [
+    {
+      "title": "Lancer #1 (Of 4)",
+      "reason": "Bad Idea title listed at $5.99 with November 18 release and October 19 FOC. Available evidence establishes solicitation details, not an aftermarket demand/supply edge; no BUY."
+    },
+    {
+      "title": "12-Foot Skeleton #2",
+      "reason": "Ignition Press, $4.99, November 25 release, October 19 FOC. The series' creator package is credible, but a second issue has no verified issue-specific demand or scarcity evidence. Do not buy speculatively."
+    },
+    {
+      "title": "Adventure Time: Bonnie the Vampire Hunter #1",
+      "reason": "Oni Press one-shot listed at $7.99, November 25 release, October 19 FOC. High entry price and no verified aftermarket catalyst or issue-specific completed sales."
+    },
+    {
+      "title": "Animal Comix and Stories #1",
+      "reason": "Fantagraphics one-shot listed at $5.99, November 25 release, October 19 FOC. Anthology/creator appeal alone does not establish resale demand."
+    },
+    {
+      "title": "Carolina Kincade #1",
+      "reason": "Prana Publishers one-shot listed at $4.99, November 25 release, October 19 FOC. Insufficient issue-specific market evidence for an investment purchase."
+    }
+  ],
+  "postFocOpportunities": [
+    {
+      "title": "Archie in Hell #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "FOC was September 28, 2026 and is passed. Existing watchlist entry remains a post-FOC monitor only; no retroactive BUY."
+    },
+    {
+      "title": "Predator vs. Punisher #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "Historical September 19 WATCH remains unchanged; FOC passed September 21. Standard copy only if available at target price."
+    },
+    {
+      "title": "Hammer Head #1",
+      "status": "POST-FOC",
+      "targetPrice": 3.99,
+      "note": "Historical September 19 WATCH remains unchanged; FOC passed September 21. Check actual post-release market evidence before buying."
+    },
+    {
+      "title": "G.I. Joe: A Real American Hero/Tomb Raider #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "Historical September 11 BUY prediction remains intact; FOC passed September 14. User position is unknown and not inferred."
+    },
+    {
+      "title": "Crowbound #1",
+      "status": "POST-FOC",
+      "targetPrice": 2.5,
+      "note": "Historical prediction remains pending. Monitor low-cost copies; do not infer a user purchase."
+    },
+    {
+      "title": "Tales of Wonder #1",
+      "status": "POST-FOC",
+      "targetPrice": 3,
+      "note": "Historical prediction remains pending. Monitor near-cover/discounted copies; do not infer a user purchase."
+    }
+  ],
+  "ledgerNotes": [
+    "All historical predictions preserved. New WATCH records are dated October 15, 2026; no user purchase or position is inferred.",
+    "September 28 and October 5 windows are past; missed candidates must be tracked as POST-FOC, never current FOC BUYs.",
+    "No current BUY is issued because evidence does not establish a sufficiently strong risk-adjusted aftermarket edge.",
+    "No ratio or premium variant is recommended."
+  ],
+  "methodologyNotes": [
+    "Completed sales for related issues and creators are context, not proof of demand for a new issue.",
+    "Pre-release listings and solicitations verify dates, prices, and credits, not scarcity or future value.",
+    "Maximum acquisition prices are conservative monitoring thresholds, not price forecasts or guaranteed resale margins.",
+    "Aftermarket return must be assessed net of shipping, selling fees, grading costs, taxes, and time."
+  ]
+}
