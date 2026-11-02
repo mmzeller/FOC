@@ -156,12 +156,27 @@
   },
   {
     "title": "Chainkata #1",
-    "status": "WATCH",
-    "reason": "2026-10-15 WATCH. FOC Oct. 19; $3.99 standard copy. DWJ creator precedent is not issue-specific evidence; maximum $3.99, quantity 0 until demand improves."
+    "status": "POST-FOC",
+    "reason": "2026-10-15 WATCH; FOC October 19 passed. Standard copy only, maximum $3.99; no issue-specific demand edge verified."
   },
   {
     "title": "Absolute Batman: Beyond Ark M #1",
+    "status": "POST-FOC",
+    "reason": "2026-10-15 WATCH; FOC October 19 passed. Prior Ark M Special sales do not prove follow-up demand; standard copy maximum $4.99."
+  },
+  {
+    "title": "Batman 2026 Annual #1",
     "status": "WATCH",
-    "reason": "2026-10-15 WATCH. FOC Oct. 19; $4.99 standard Cover A. Prior Ark M Special completed sales are encouraging but not proof for this follow-up; maximum $4.99, quantity 0."
+    "reason": "2026-11-02 WATCH; $5.99 standard Cover A. No issue-specific demand or scarcity evidence; quantity 0."
+  },
+  {
+    "title": "Robin Hood (2026) #1",
+    "status": "POST-FOC",
+    "reason": "2026-11-02 PASS; FOC passed. $4.99 standard copy; no speculative buy."
+  },
+  {
+    "title": "Christmas Darkness #1",
+    "status": "POST-FOC",
+    "reason": "2026-11-02 PASS; FOC passed. $5.99 seasonal horror anthology without a verified aftermarket edge."
   }
 ]
