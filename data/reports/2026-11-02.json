@@ -1,0 +1,175 @@
+{
+  "reportDate": "2026-11-02",
+  "cutoffLabel": "Monday, November 2, 2026",
+  "generatedAt": "2026-11-02",
+  "summary": "No speculative BUY is justified. Batman 2026 Annual #1 is WATCH at standard Cover A only, quantity 0. Robin Hood #1 and Christmas Darkness #1 are PASS. October 19 candidates are POST-FOC monitors, not current buys.",
+  "orderingWindow": "Comic Previews lists November 2, 9, 16, 23, and 30 FOC dates; PRH confirms November 2. Exact cutoff time is retailer-specific. Confirm directly with retailer. Next listed FOC: November 9, 2026.",
+  "books": [
+    {
+      "rank": 1,
+      "title": "BATMAN 2026 ANNUAL #1 (ONE SHOT)",
+      "publisher": "DC Comics",
+      "action": "WATCH",
+      "evidenceGrade": "C+",
+      "confidence": "Low",
+      "risk": "High",
+      "qty": "0",
+      "maximumAcquisitionPrice": 5.99,
+      "foc": "2026-11-02",
+      "releaseDate": "2026-11-25",
+      "creators": "Matt Fraction (writer); Brian Ching and Jesse Lonergan (art); Brian Ching (Cover A)",
+      "verifiedFacts": [
+        "Lunar lists 48 pages, $5.99, FOC November 2 and in-store November 25, 2026.",
+        "Solicitation explores the Torus and the Minotaur in Gotham.",
+        "Variants at $6.99; this report considers standard Cover A only."
+      ],
+      "marketEvidence": [
+        "No issue-specific completed sales before release.",
+        "No verified print run or retailer order count; general Batman demand is not issue-specific evidence."
+      ],
+      "thesis": "Recognizable continuity and creative team may attract collectors, but no verified scarcity or issue-specific catalyst. WATCH only; no speculative purchase.",
+      "unknowns": [
+        "Retailer orders and print run",
+        "Durable key event or first appearance",
+        "Post-release completed sales"
+      ],
+      "sources": [
+        "https://www.lunardistribution.com/product/0926DC0091/BATMAN-2026-ANNUAL-1-ONE-SHOT-CVR-A-BRIAN-CHING",
+        "https://www.comicreleases.com/2026/08/dc-november-2026-solicitations/",
+        "https://comicpreviews.com/last_call"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "ROBIN HOOD (2026) #1",
+      "publisher": "Dynamite Entertainment",
+      "action": "PASS",
+      "evidenceGrade": "C",
+      "confidence": "Low",
+      "risk": "High",
+      "qty": "0",
+      "maximumAcquisitionPrice": null,
+      "foc": "2026-11-02",
+      "releaseDate": "2026-11-25",
+      "creators": "Nate Cosby and Greg Weisman (writers); Alessandro Ranaldi (artist); Joshua Middleton (Cover A)",
+      "verifiedFacts": [
+        "Lunar lists Cover A at $4.99, FOC November 2 and in-store November 25, 2026.",
+        "Animal-kingdom Robin Hood story; multiple variants/incentives listed."
+      ],
+      "marketEvidence": [
+        "No issue-specific completed sales before release.",
+        "Variant guide estimates are not completed sales."
+      ],
+      "thesis": "Creative team and familiar legend do not establish resale demand. Pass; do not chase ratio variants.",
+      "unknowns": [
+        "Retailer orders and print run",
+        "Collector response",
+        "Post-release completed sales"
+      ],
+      "sources": [
+        "https://www.lunardistribution.com/product/0926DE0734/ROBIN-HOOD-2026-1-CVR-A-JOSHUA-MIDDLETON",
+        "https://comicpreviews.com/last_call",
+        "https://www.keycollectorcomics.com/series/robin-hood-10%2C125034/?isVariant=true"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "CHRISTMAS DARKNESS #1",
+      "publisher": "BOOM! Studios",
+      "action": "PASS",
+      "evidenceGrade": "C",
+      "confidence": "Low",
+      "risk": "High",
+      "qty": "0",
+      "maximumAcquisitionPrice": null,
+      "foc": "2026-11-02",
+      "releaseDate": "2026-12-16",
+      "creators": "Benito Cereno and various writers; Miklós Felvidéki and various artists; Rebeca Puebla (Cover A)",
+      "verifiedFacts": [
+        "PRH lists a 40-page mature horror anthology at $5.99, on sale December 16, FOC November 2.",
+        "Seasonal horror anthology includes a Hanukkah-horror story and is associated with Hello Darkness."
+      ],
+      "marketEvidence": [
+        "No issue-specific completed sales before release.",
+        "No verified print run or retailer order data."
+      ],
+      "thesis": "Seasonal timing and variants may attract attention, but a $5.99 anthology has no demonstrated aftermarket edge. Pass.",
+      "unknowns": [
+        "Retailer orders and print run",
+        "Durable collector catalyst",
+        "Post-release sales after seasonal window"
+      ],
+      "sources": [
+        "https://prhcomics.com/book/?isbn=84428401390101011",
+        "https://www.comicreleases.com/2026/09/boom-december-2026-solicitations/",
+        "https://comicpreviews.com/last_call"
+      ]
+    }
+  ],
+  "passCandidates": [
+    {
+      "title": "Lancer #1 (Of 4)",
+      "reason": "Bad Idea, $5.99, November 18 release, November 2 FOC; no verified aftermarket edge."
+    },
+    {
+      "title": "Vampirella vs. Darkstalkers Special #1",
+      "reason": "Dynamite/UDON, $5.99; broad variant program, no issue-specific demand evidence."
+    },
+    {
+      "title": "Absolute Wonder Woman #26",
+      "reason": "DC, $4.99, November 25 release; no specific collector catalyst identified."
+    },
+    {
+      "title": "Final Boss #1 Black White And Blood Reprint",
+      "reason": "Image, $3.99; reprint with no verified demand advantage."
+    }
+  ],
+  "postFocOpportunities": [
+    {
+      "title": "Chainkata #1",
+      "status": "POST-FOC",
+      "targetPrice": 3.99,
+      "note": "October 15 WATCH preserved; October 19 FOC passed. Standard copy only."
+    },
+    {
+      "title": "Absolute Batman: Beyond Ark M #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "October 15 WATCH preserved; October 19 FOC passed. Prior special sales do not prove follow-up demand."
+    },
+    {
+      "title": "Archie in Hell #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "September 28 FOC passed; standard copy near cover only."
+    },
+    {
+      "title": "G.I. Joe: A Real American Hero/Tomb Raider #1",
+      "status": "POST-FOC",
+      "targetPrice": 4.99,
+      "note": "Historical BUY preserved; FOC passed September 14. User position unknown."
+    },
+    {
+      "title": "Crowbound #1",
+      "status": "POST-FOC",
+      "targetPrice": 2.5,
+      "note": "Historical prediction pending; do not infer purchase."
+    },
+    {
+      "title": "Tales of Wonder #1",
+      "status": "POST-FOC",
+      "targetPrice": 3,
+      "note": "Historical prediction pending; do not infer purchase."
+    }
+  ],
+  "ledgerNotes": [
+    "Historical records preserved; new WATCH/PASS records dated November 2.",
+    "No user positions inferred.",
+    "No completed-sale evidence for unreleased candidates."
+  ],
+  "methodologyNotes": [
+    "FOC checked against Comic Previews and distributor/publisher listings.",
+    "Exact ordering time is retailer-specific.",
+    "Maximum prices are monitoring limits, not forecasts."
+  ]
+}
