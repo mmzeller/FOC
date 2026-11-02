@@ -285,6 +285,36 @@
       "maximumAcquisitionPrice": 4.99,
       "suggestedQuantity": "0",
       "note": "Preceding Ark M Special #1 has completed-sale demand, but follow-up demand and key status are unverified. Standard Cover A only; no variant speculation."
+    },
+    {
+      "title": "Batman 2026 Annual #1 (One Shot)",
+      "status": "WATCH",
+      "predictionDate": "2026-11-02",
+      "original_recommendation": "WATCH",
+      "foc": "2026-11-02",
+      "maximumAcquisitionPrice": 5.99,
+      "suggestedQuantity": "0",
+      "note": "Batman continuity and creative team may attract collectors, but issue-specific demand, scarcity, and completed-sale evidence are absent. Standard Cover A only."
+    },
+    {
+      "title": "Robin Hood (2026) #1",
+      "status": "PASS",
+      "predictionDate": "2026-11-02",
+      "original_recommendation": "PASS",
+      "foc": "2026-11-02",
+      "maximumAcquisitionPrice": null,
+      "suggestedQuantity": "0",
+      "note": "Creative team and recognizable legend do not establish issue-specific demand/supply advantage; broad variant program adds risk."
+    },
+    {
+      "title": "Christmas Darkness #1",
+      "status": "PASS",
+      "predictionDate": "2026-11-02",
+      "original_recommendation": "PASS",
+      "foc": "2026-11-02",
+      "maximumAcquisitionPrice": null,
+      "suggestedQuantity": "0",
+      "note": "Seasonal horror anthology at $5.99; no verified issue-specific aftermarket demand or scarcity."
     }
   ]
 }
